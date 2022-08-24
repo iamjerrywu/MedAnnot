@@ -1,0 +1,24 @@
+- Core logic
+  ![](images/display.png) 
+  - Image [Assigned to @iamjerrywu]
+    - Figure out Java Image processing Library to use
+    - Figure out how to read image data in Java
+    - Validate image
+    - Put numbers in image
+    - Create processed image file in target directory
+  - Table [Assigned to @raaidrt]
+      - Figure out how to read JSON table data
+      - Validate table data
+  - Annotations [Assigned to @raaidrt]
+      - Create HTML output for annotations
+- Framework [Assigned to @iamjerrywu]
+  - rendering using the plugin
+- Handlebars
+  - Taking input [Assigned to @iamjerrywu]
+    - Select display/annotation plugin
+    - Select image file
+    - Select annotation data table
+  - Visualizer [Assigned to @raaidrt]
+    - Visualize annotations
+    - Buttons to trigger annotations
+    - Include image inside the page

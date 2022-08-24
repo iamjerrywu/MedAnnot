@@ -1,0 +1,3 @@
+xCoordinate,yCoordinate,Title,Fracture,Tumor,Infection,Blockage
+150,150,One,Y,N,Y,Y
+200,200,Two,Y,Y,Y,Y

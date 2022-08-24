@@ -1,0 +1,3 @@
+#List of plugins to be registered by framework
+edu.cmu.cs.cs214.medannot.plugin.XRay
+edu.cmu.cs.cs214.medannot.plugin.MRI

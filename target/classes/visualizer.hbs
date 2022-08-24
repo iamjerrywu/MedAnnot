@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Visualization</title>
+  <style>
+    #buttons {
+      margin: auto;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+      width: 500px;
+      background-color: red;
+    }
+
+    #template {
+       margin: auto;
+       display: grid;
+       grid-template-columns: auto auto;
+       background-color: #2196F3;
+       padding: 10px;
+       width: 1080px;
+    }
+
+    #annotation {
+        margin: auto;
+        display: grid;
+        padding: 10px;
+        width: 500px;
+    }
+
+    .cell {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      height: 10vmin;
+      text-align: center;
+    }
+
+    #bottombar {
+      height: 5vh;
+    }
+
+    #instructions {
+      height: 5vh;
+      background-color: white;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    #bottombar button {
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      float: left;
+      font-size: 2vw
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .playable { background-color: red;}
+  </style>
+</head>
+
+ <div class="template">
+  <div class="centered">
+    <h2>Image</h2>
+    <img src="{{image}}" alt="{{imagename}}">
+  </div>
+
+  <div class="centered">
+    <h2>Annotations</h2>
+    <div id="instructions"> {{instructions}} </div>
+      <div id="buttons">
+        <!--{{#each cells}}
+          {{#if link}}
+            <a href={{link}}><div class="cell {{clazz}}">Select</div></a>
+          {{else}}
+            <div class="cell {{clazz}}">{{#if player}}{{player}}{{else}}-{{/if}}</div>
+          {{/if}}
+
+        {{/each}}-->
+        {{#each buttons}}
+           <a href={{link}}><div class="cell playable">{{number}}</div></a>
+        {{/each}}
+      </div>
+      <div id="annotation">
+        {{{annotation}}}
+      </div>
+      <div id="bottombar">
+        <a href="/restart"><button>Restart</button></a>
+      </div>
+    </div>
+</div>
+
+</html>
